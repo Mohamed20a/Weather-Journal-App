@@ -1,15 +1,16 @@
 /* Global Variables */
-
+// This is an addition to the site
+// The name of the site changes when you switch to another browser
+// He returns to his name at the pillar to him
 let docTitle = document.title;
-
+// Variable Name
 window.addEventListener("blur", () => {
   document.title = "Come Back :(";
 })
-
+// Real Name
 window.addEventListener("focus", () => {
   document.title = docTitle;
 })
-
 
 // OpenWeatherApi configuration
 const url = 'https://api.openweathermap.org/data/2.5/weather'
@@ -30,8 +31,7 @@ const content = document.getElementById('content')
 
 // Create a new date instance dynamically with JS
 let d = new Date()
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear()
-
+let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear()
 // Fetch Weather Data from OpenWeatherApi
 const fetchWeather = async (baseURL, zip, apiKey) => {
   try {
