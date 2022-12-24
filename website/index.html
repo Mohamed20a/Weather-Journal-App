@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "app">
+
+  <section class="section">
+    <div class="container">
+        <!-- Form -->
+      <div class="form">
+              <!-- Title of form  -->
+          <h2 class="title">Weather Journal App</h2>
+
+              <!-- Zip Code Input -->
+          <div class ="holder zip">
+            <input type="text" id="zip" placeholder="Enter Zip code here">
+          </div>
+
+              <!-- Feelings Input -->
+          <div class="feelings-input">
+            <label for="feelings">How is the weather making you feel?</label>
+            <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" required></textarea>
+          </div>
+
+              <!-- Generate Button -->
+          <div class="inputBx">
+              <button class="code" id="generate">Generate <i class="fa-solid fa-bolt"></i></button> 
+          </div>
+
+      </div>
+
+              <!-- Result Form -->
+        <div class ="holder entry" >
+
+              <!-- Title of form  -->
+          <div class = "title2">Most Recent Entry</div>
+
+              <!-- Result Section -->
+          <div id = "entryHolder">
+              <!-- Date Result -->
+            <div id = "date"> </div>
+              <!-- Temp Result -->
+            <div id = "temp"></div>
+              <!-- Feelings Result -->
+            <div id = "content"></div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+
+</div>  
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>

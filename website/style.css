@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.418)),url(https://skyandme.ch/wp-content/uploads/2018/12/sky-and-me-header.jpg);
+    display: -webkit-flex;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+#app{
+    height:100vh;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Form */
+.section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 400px;
+    padding: 20px;
+    background-color: #e8eaec;
+    border-radius: 10px;
+    border: 5px solid #e8eaec;
+}
+
+/* Title of form  */
+.title{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #05a091;
+    font-family: serif;
+}
+
+/* Zip Code Input */
+input{
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+/* Feelings Input */
+textarea{
+    width: 100%;
+    height: 5rem;
+    padding: 10px;
+    margin-top: 1em;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Generate Button */
+button {
+    --color: #05a091;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    margin: 9px 26%;
+}
+button::before, button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+button::before {
+    top: -1em;
+    left: -1em;
+}
+button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+/* Generate Button Hover */
+button:hover::before, button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+button:hover {
+    color: #fff;
+}
+button:active {
+    filter: brightness(.8);
+}
+
+
+
+
+/* Result Form */
+.entry {
+    text-align: left;
+    background: rgba(255,255,255,0.55);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.275);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Title of form */
+.title2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #05a091;
+    border-bottom: 1px black solid;
+    font-size: 25px;
+}
+
+/* Result Section */
+#entryHolder {
+    font-size: 25px;
+}
+
+/* Date Result */
+#date {
+    margin-top: 10px;
+}
+
+/* Temp Result */
+#temp {
+    margin-top: 10px;
+}
+
+/* Feelings Result */
+#content {
+    margin-top: 10px;
+}
+
+
+
